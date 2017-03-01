@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#6e6e6e"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:text="Info"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeElapsed"
+        android:layout_below="@id/label"
+        android:text="Time elapsed"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:padding="2dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metronome Speed: "
+        android:textSize="25dp"
+        android:id="@+id/MetSpeed"
+        android:textColor="#e0e0e0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMetSpeed"
+        android:layout_toRightOf="@id/MetSpeed"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Speed"
+        android:layout_toRightOf="@id/tvMetSpeed"
+        android:text="bpm"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="Open Connection" />
+           <!-- android:background="@drawable/rounded_corners" -->
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/open"
+            android:layout_alignTop="@id/open"
+            android:text="Close Connection" />
+           <!-- android:background="@drawable/rounded_corners"-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>
